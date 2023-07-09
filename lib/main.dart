@@ -25,7 +25,7 @@ class _AppState extends State<App> {
   void initState() {
     FirebaseAuth.instance.authStateChanges().listen((User? user) {
       if (user == null) {
-        print('User is currently signed out!');
+        print('User is currently signed out of this device!');
       } else {
         print('User is signed in!');
       }
